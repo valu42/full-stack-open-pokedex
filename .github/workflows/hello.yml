@@ -3,7 +3,7 @@ name: Hello World!
 on:
   push:
     branches:
-      - master
+      - master  
 
 jobs:
   hello_world_job:
@@ -12,3 +12,10 @@ jobs:
       - name: Say hello
         run: |
           echo "Hello World!"
+      - name: Say date
+        run: |
+          date
+      - name: List files
+        run: |
+          ls -l
+        
